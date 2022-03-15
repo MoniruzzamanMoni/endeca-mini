@@ -1,0 +1,142 @@
+{
+  "/adobe-tag": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/d-way": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "autoRewrite": true,
+    "protocolRewrite": "http"
+  },
+  "/doge": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/custos": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/cufs": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/linkresolver": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/dtchart": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/etc": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/home": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/api": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/endecapod": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/data": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/wizard": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/bfResources": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/Flux": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/collections": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/images": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/css": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/js": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/webshop": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/piano": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/diffy": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/dtm-country-info": {
+    "target": "https://dev-research.ibfd.org",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true    
+  }
+}
