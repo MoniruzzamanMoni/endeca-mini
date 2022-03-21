@@ -11,6 +11,12 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { LoginService } from './login/login.service';
 import { AuthGuard } from './shared/auth-guard';
+import { TopicSearchModule, TopicService } from './topic-search/topic-search.module';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InitTopicTreeExposeService } from './topic-search/service/topic.service';
+import { TreeModule } from 'primeng/tree';
 
 
 const routes: Routes = [
@@ -41,14 +47,19 @@ const routes: Routes = [
     UserComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     RouterModule,
     FormsModule,
     RouterModule.forRoot(routes, {useHash: true}),
-    EndecapodModule
+    EndecapodModule,
+    TopicSearchModule,
+    TreeModule,
+    NgbModule
   ],
-  providers: [EndecapodService, LoginService, AuthGuard],
+  providers: [EndecapodService, LoginService, AuthGuard, TopicService, InitTopicTreeExposeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,16 @@
+<a *ngIf="enabled"  class="ib-collapse-panel ib-filters {{isPanelCollapsed? 'collapsed': ''}}" (click)="togglePanel()"
+  [attr.aria-expanded]="!isPanelCollapsed" href="#ib-topic-search" role="button" aria-controls="ib-topic-search">
+  <i class="fa fa-list"></i>
+  Topic Search
+  <i class="ib-angle-down-up" aria-hidden="true"></i>
+</a>
+<div *ngIf="enabled" class="row ib-padding-20">
+  <div class="ib-topic-search">
+    <div class="multi-collapse" [collapse]="isPanelCollapsed" [isAnimated]="true" id="ib-topic-search">
+
+      <p-tree [value]="topicTreeNodes" selectionMode="checkbox" [metaKeySelection]="false" [(selection)]="selectedTopics" [loading]="loading"
+        (onNodeSelect)="nodeSelect($event)" (onNodeUnselect)="nodeUnselect($event)" (onNodeCollapse)="nodeCollapse($event)" (onNodeExpand)="nodeExpand($event)"
+        [filter]="topicTreeNodes ? true : false" [filterPlaceholder]="'Find topics'"></p-tree>
+    </div>
+  </div>
+</div>

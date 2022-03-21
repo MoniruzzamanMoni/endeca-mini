@@ -3,6 +3,7 @@ import { filter, map, mergeMap, switchMap, take, toArray } from 'rxjs/operators'
 import { EdcaUrlSerializer, EndecapodService, SearchResult } from '@ibfd/endecapod';
 import { from, of } from 'rxjs';
 import { NavigationOption } from '../shared/navigation-option';
+import { TopicServiceConfig } from '../topic-search/topic-search.module';
 
 @Component({
   selector: 'app-user',
@@ -18,6 +19,12 @@ export class UserComponent implements OnInit {
   dirty = false;
 
 
+  /** @internal */
+  topicConfig: TopicServiceConfig;
+  /** @internal */
+  loading: boolean = false;
+
+
   constructor(
     private endecapodService: EndecapodService,
     private urlSerializer: EdcaUrlSerializer
@@ -28,6 +35,31 @@ export class UserComponent implements OnInit {
       new NavigationOption(4293590545, 'Global topics'),
       new NavigationOption(4293588598, 'Primary Sources')
     ];
+
+    this.topicConfig =  {
+      "initQuery": "N=3+10&Ne=6185+6201+6332+6593+6680&select=relative_path",
+      "endecapodUrl": "/endecapod",
+      "awareUrl": "/endecapod/my",
+      "topicDimensions": [
+        6185,
+        6201,
+        6332,
+        6593,
+        6680
+      ],
+      "suppressedChips": [
+        3368,
+        3686,
+        7487
+      ]
+    };
+  }
+
+  topicSearchLoading(isLoading: boolean) {
+    // if (isLoading) {
+    //   this.stateService.save(StateService.STATE_KEY_COLLECTION_HOME, 'false');
+    // }
+    // this.stateService.save(StateService.STATE_KEY_TOPIC_SEARCH_LOADING, isLoading.toString());
   }
 
   ngOnInit(): void {
